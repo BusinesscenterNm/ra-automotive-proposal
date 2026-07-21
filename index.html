@@ -4,11 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
-<title>Zico's Proposal · RA Automotive × Mpower Sourcing</title>
+<title>Zico's RA Automotive Company Proposal · Mpower Sourcing</title>
 <meta name="description" content="The website Mpower Sourcing is putting live for RA Automotive, the opportunities behind it, and what it costs. Prepared for Zico Fremont." />
 <meta name="theme-color" content="#070B18" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Zico's Proposal · RA Automotive Company" />
+<meta property="og:title" content="Zico's RA Automotive Company Proposal" />
 <meta property="og:description" content="From Mpower Sourcing. Your website, the opportunities behind it, the optional add-ons, and the pricing, on one page." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A1022'/%3E%3Cpath d='M8 23V9h5a4 4 0 0 1 0 8h-5m6 0l4 6' fill='none' stroke='%23F1C33F' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -196,6 +196,8 @@
   .sitecard .txt{ flex:1 1 320px }
   .sitecard .u{ font-family:var(--body); font-weight:600; font-size:.86rem; color:var(--gold-l); word-break:break-all }
   .addon-lead{ color:var(--steel); max-width:62ch; margin:.2rem 0 0 }
+  /* mobile: stack the stat cards so nothing overflows */
+  @media (max-width:560px){ .stat-row{ flex-direction:column } .stat{ flex:1 1 auto; width:100% } }
   @media print{
     @page{ margin:0 }
     *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important }
@@ -235,7 +237,7 @@
   <!-- HERO -->
   <header class="hero">
     <p class="eyebrow" data-reveal>Mpower Sourcing · Proposal for RA Automotive Company</p>
-    <h1 class="h1" data-reveal>Zico's<br>proposal.</h1>
+    <h1 class="h1" data-reveal>Zico's <em>RA Automotive</em> proposal.</h1>
     <p class="lede" data-reveal>A website that matches RA Automotive's reputation, and a clear plan to fill the capacity you already have. Here is everything we covered, the site we are ready to put live for you, and what it costs. The <b>$700 website</b> is the plan. Everything else is optional, whenever you want it.</p>
     <div class="cta" data-reveal>
       <a class="btn btn--gold" href="#site">See your site</a>
@@ -247,9 +249,9 @@
       <div><span class="lbl">Date</span><b>21 July 2026</b><span class="mut">Valid for 30 days</span></div>
     </div>
     <div class="stat-row">
-      <div class="stat" data-reveal><b data-count="15">15</b><span>vehicle capacity in your bays</span></div>
-      <div class="stat" data-reveal><b data-count="70" data-suffix="%">70%</b><span>running today, on word of mouth alone</span></div>
-      <div class="stat" data-reveal><b data-count="30" data-suffix="%">30%</b><span>sitting open. That is the opportunity.</span></div>
+      <div class="stat" data-reveal><b data-count="15">15</b><span>vehicles your bays hold at once, your full capacity</span></div>
+      <div class="stat" data-reveal><b data-count="70" data-suffix="%">70%</b><span>in use today, about 10 to 11 bays working, almost all word of mouth</span></div>
+      <div class="stat" data-reveal><b data-count="30" data-suffix="%">30%</b><span>sitting open, roughly 4 to 5 empty bays a day, ready to fill</span></div>
     </div>
   </header>
 
@@ -354,8 +356,8 @@
     </article>
 
     <article class="svc" data-reveal>
-      <div class="svc-top"><h4>Website plus CRM</h4><span class="svc-price">$2K to $3K<small> setup · then $400/mo</small></span></div>
-      <p>The website captures leads. The CRM works them for you. It hooks into your site so every call, form, and photo-quote lands in one place, then sends automatic texts and emails to anyone who reaches out, texts back any missed call on its own, and asks every finished customer for a review. It can tie into your Google Business page too. This is how you turn that dormant past-customer list into repeat work.</p>
+      <div class="svc-top"><h4>Website plus CRM</h4><span class="svc-price">$2K to $3K<small> setup · then $450/mo</small></span></div>
+      <p>The website captures leads. The CRM works them for you. It hooks into your site so every call, form, and photo-quote lands in one place, then sends automatic texts and emails to anyone who reaches out, texts back any missed call on its own, and asks every finished customer for a review. It can tie into your Google Business page too. This is how you turn that dormant past-customer list into repeat work. The <b>$450 a month covers your website and the CRM together</b>, one bill.</p>
       <div class="flow"><span>Capture every lead</span><i>→</i><span>Auto text and email</span><i>→</i><span>Missed-call text-back</span><i>→</i><span>Reviews on autopilot</span></div>
       <p class="forra"><b>For RA:</b> a busy afternoon never costs you a job you already earned. The setup is scoped to what you want, so it starts with a short planning call. It also runs best with a person on inbound, which we can staff for you affordably.</p>
     </article>
