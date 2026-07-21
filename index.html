@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="robots" content="noindex, nofollow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
 <title>Zico's Proposal · RA Automotive × Mpower Sourcing</title>
-<meta name="description" content="A website that matches RA Automotive's reputation, and the services that fill your open 30%. The key points, the services we sell, and what they cost." />
+<meta name="description" content="The website Mpower Sourcing is putting live for RA Automotive, the opportunities behind it, and what it costs. Prepared for Zico Fremont." />
 <meta name="theme-color" content="#070B18" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Zico's Proposal · RA Automotive" />
-<meta property="og:description" content="From Mpower Sourcing. The website, the growth services we sell, and the pricing, on one page." />
+<meta property="og:title" content="Zico's Proposal · RA Automotive Company" />
+<meta property="og:description" content="From Mpower Sourcing. Your website, the opportunities behind it, the optional add-ons, and the pricing, on one page." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A1022'/%3E%3Cpath d='M8 23V9h5a4 4 0 0 1 0 8h-5m6 0l4 6' fill='none' stroke='%23F1C33F' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -180,6 +180,22 @@
 
   .r [data-reveal]{ opacity:0; transform:translateY(20px) }
   @media (prefers-reduced-motion: reduce){ .r [data-reveal]{ opacity:1; transform:none } }
+
+  /* plan hero + add-on pricing */
+  .plan{ display:grid; gap:1.4rem 1.8rem; grid-template-columns:1.05fr 1fr; align-items:start }
+  @media(max-width:640px){ .plan{ grid-template-columns:1fr } }
+  .plan .col h4{ font-family:var(--display); font-weight:600; font-size:1.02rem; color:var(--gold-l); margin:0 0 .7rem }
+  .plan ul{ list-style:none; margin:0; padding:0; display:grid; gap:.55rem }
+  .plan li{ position:relative; padding-left:1.5rem; font-size:.93rem; color:var(--fog); line-height:1.42 }
+  .plan li::before{ content:"✓"; position:absolute; left:0; top:0; color:var(--gold); font-weight:700 }
+  .priceband{ display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem 1.1rem; margin:.1rem 0 1.3rem }
+  .priceband .big{ font-family:var(--display); font-weight:900; font-size:2.5rem; color:var(--gold); font-variant-numeric:tabular-nums; line-height:1 }
+  .priceband .mo{ font-family:var(--display); font-weight:900; font-size:1.35rem; color:var(--fog); font-variant-numeric:tabular-nums }
+  .priceband small{ color:var(--steel); font-size:.9rem; font-weight:600 }
+  .sitecard{ display:flex; flex-wrap:wrap; align-items:center; gap:1rem 1.4rem; justify-content:space-between }
+  .sitecard .txt{ flex:1 1 320px }
+  .sitecard .u{ font-family:var(--body); font-weight:600; font-size:.86rem; color:var(--gold-l); word-break:break-all }
+  .addon-lead{ color:var(--steel); max-width:62ch; margin:.2rem 0 0 }
   @media print{
     @page{ margin:0 }
     *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important }
@@ -204,11 +220,12 @@
       <img class="brand-logo" src="data:image/png;base64,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" alt="Mpower Sourcing" width="92" height="30" />
     </span>
     <div class="navlinks">
-      <a href="#snapshot">Snapshot</a>
-      <a href="#offer">The offer</a>
-      <a href="#selling">What we sell</a>
+      <a href="#site">Your site</a>
+      <a href="#opportunities">Opportunities</a>
+      <a href="#offer">Lead offer</a>
+      <a href="#plan">Your plan</a>
       <a href="#referrals">Referrals</a>
-      <a href="#contact">Contact</a>
+      <a href="#confirm">Confirm</a>
     </div>
   </div>
 </nav>
@@ -217,36 +234,56 @@
 
   <!-- HERO -->
   <header class="hero">
-    <p class="eyebrow" data-reveal>Mpower Sourcing · Proposal for RA Automotive</p>
+    <p class="eyebrow" data-reveal>Mpower Sourcing · Proposal for RA Automotive Company</p>
     <h1 class="h1" data-reveal>Zico's<br>proposal.</h1>
-    <p class="lede" data-reveal>A website that matches your reputation, and the services that fill your open <b>30%</b>. Here are the key points, what we sell, and what it costs. No obligation to go past the website.</p>
+    <p class="lede" data-reveal>A website that matches RA Automotive's reputation, and a clear plan to fill the capacity you already have. Here is everything we covered, the site we are ready to put live for you, and what it costs. The <b>$700 website</b> is the plan. Everything else is optional, whenever you want it.</p>
     <div class="cta" data-reveal>
-      <a class="btn btn--gold" href="#selling">See what we sell</a>
-      <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      <a class="btn btn--gold" href="#site">See your site</a>
+      <a class="btn btn--ghost" href="#plan">View your plan</a>
     </div>
     <div class="prepared" data-reveal>
-      <div><span class="lbl">Prepared for</span><b>Zico</b><span class="mut">RA Automotive Company</span></div>
-      <div><span class="lbl">Prepared by</span><b>Jay and Jordan Caro</b><span class="mut">Mpower Sourcing</span></div>
-      <div><span class="lbl">Date</span><b>20 July 2026</b><span class="mut">Valid for 30 days</span></div>
+      <div><span class="lbl">Prepared for</span><b>Zico Fremont</b><span class="mut">RA Automotive Company</span></div>
+      <div><span class="lbl">Prepared by</span><b>Mpower Sourcing</b><span class="mut">Offshore Talent · AI Automation</span></div>
+      <div><span class="lbl">Date</span><b>21 July 2026</b><span class="mut">Valid for 30 days</span></div>
     </div>
     <div class="stat-row">
-      <div class="stat" data-reveal><b data-count="15">15</b><span>vehicles you can hold</span></div>
-      <div class="stat" data-reveal><b data-count="70" data-suffix="%">70%</b><span>running today</span></div>
-      <div class="stat" data-reveal><b data-count="30" data-suffix="%">30%</b><span>open, ready to fill</span></div>
+      <div class="stat" data-reveal><b data-count="15">15</b><span>vehicle capacity in your bays</span></div>
+      <div class="stat" data-reveal><b data-count="70" data-suffix="%">70%</b><span>running today, on word of mouth alone</span></div>
+      <div class="stat" data-reveal><b data-count="30" data-suffix="%">30%</b><span>sitting open. That is the opportunity.</span></div>
     </div>
   </header>
 
   <hr class="d" />
 
-  <!-- SNAPSHOT -->
-  <section id="snapshot">
-    <p class="secnum" data-reveal>01 · Where you're at</p>
-    <h2 class="sec-h" data-reveal>The quick picture</h2>
+  <!-- YOUR SITE -->
+  <section id="site">
+    <p class="secnum" data-reveal>01 · Your site</p>
+    <h2 class="sec-h" data-reveal>Here is the site we want to put live for you</h2>
+    <p class="sec-note" data-reveal>Not a mockup, a working draft you can click through right now. It matches your navy and gold, leads with the fuel-economy offer, features your seatbelt and airbag work, and shows your cars for sale. Look it over, then tell us anything you would change. It is built to be edited to your liking before it goes live.</p>
+    <div class="callout sitecard" data-reveal>
+      <div class="txt">
+        <p class="tag">Your live draft</p>
+        <h3>RA Automotive, done right</h3>
+        <p class="u">ra-automotive-company.vercel.app</p>
+      </div>
+      <a class="btn btn--gold" href="https://ra-automotive-company.vercel.app" target="_blank" rel="noopener">Open your site</a>
+    </div>
+    <p class="ba-cap" data-reveal style="text-align:left;margin-top:.9rem">This draft lives on our own address for now. Nothing goes live on your domain until you give the word.</p>
+  </section>
+
+  <hr class="d" />
+
+  <!-- OPPORTUNITIES -->
+  <section id="opportunities">
+    <p class="secnum" data-reveal>02 · Opportunities</p>
+    <h2 class="sec-h" data-reveal>Opportunities</h2>
+    <p class="sec-note" data-reveal>The whole reason for this project is the room you already have to grow. These are the low-hanging opportunities the site is built to capture.</p>
     <ul class="facts">
-      <li data-reveal>15-vehicle capacity, running near 70%. That open 30% is real work you can already handle.</li>
-      <li data-reveal>Almost all business is word of mouth. No email or text follow-up to past customers yet.</li>
-      <li data-reveal>Seatbelt and airbag repair is your edge, and it is already showing up in search.</li>
-      <li data-reveal>You want one simple service, under an hour, that fills bays fast without tying one up.</li>
+      <li data-reveal><b>The 70% you run today.</b> Your bays hold about 15 vehicles, and roughly 10 or 11 are working at any time. That is a healthy shop, and almost all of it comes from word of mouth alone. Nothing paid, nothing automated. That is your floor, not your ceiling.</li>
+      <li data-reveal><b>The 30% sitting open.</b> That leaves about 4 or 5 bays empty on a normal day. That open capacity is not free time, it is lost business, revenue you are already staffed and equipped to earn but are not capturing yet. You do not need to work harder, you need those bays filled. Lift that number even a little and it compounds into serious money across a year.</li>
+      <li data-reveal><b>Years of past customers, never followed up.</b> With no email or text outreach, every happy customer is a one-time visit. That list is your cheapest growth, and right now it is dormant.</li>
+      <li data-reveal><b>Seatbelt and airbag repair, already found in search.</b> It is your clearest edge and the one place your visibility already works. We protect it and build on it.</li>
+      <li data-reveal><b>One simple, under-an-hour service to fill bays fast.</b> Exactly what you have been looking for. The fuel-economy tune-up below is that service, and every import that comes in can buy it.</li>
     </ul>
   </section>
 
@@ -254,90 +291,91 @@
 
   <!-- OFFER -->
   <section id="offer">
-    <p class="secnum" data-reveal>02 · The lead offer</p>
+    <p class="secnum" data-reveal>03 · The lead offer</p>
     <h2 class="sec-h" data-reveal>Sell the result: better fuel economy</h2>
     <div class="callout" data-reveal>
       <p class="tag">Your own idea, the strongest one</p>
       <h3>A fuel-economy tune-up your whole customer base can buy</h3>
-      <p>You already own the diagnostic equipment. Basic tuning, air intake, and error-code correction give a real jump in miles per gallon, and it pays for itself in a few fill-ups. Best part: it fits the Hondas, Civics, Corollas and Camrys that make up most of your customers, not one narrow car. Every car that comes in benefits, so it is easy to promote and fast to deliver. We then get you found for it on Google and inside AI answers.</p>
+      <p>You already own the diagnostic equipment. Basic tuning, air-intake work, and error-code correction give a real jump in miles per gallon, and it pays for itself in a few fill-ups. Best part: it fits the Nissans and Infinitis you already sell and service, and the everyday Hondas and Toyotas most Miami drivers own, not one narrow car. Every import that comes in benefits, so it is easy to promote and fast to deliver, under an hour a car without tying up a bay. It is the simple, high-volume service you told us you were hunting for.</p>
     </div>
   </section>
 
   <hr class="d" />
 
-  <!-- WHAT WE SELL -->
-  <section id="selling">
-    <p class="secnum" data-reveal>03 · What we sell</p>
-    <h2 class="sec-h" data-reveal>The website, and the services behind it</h2>
-    <p class="sec-note" data-reveal>Start with the website. Add the growth services whenever you are ready, one at a time. Monthly covers upkeep, so you never touch the site yourself. Month to month, and the site is always yours.</p>
+  <!-- YOUR PLAN -->
+  <section id="plan">
+    <p class="secnum" data-reveal>04 · Your plan</p>
+    <h2 class="sec-h" data-reveal>The website, ready to go live</h2>
+    <p class="sec-note" data-reveal>This is the plan you confirmed. One flat setup, one small monthly to keep it running and current. Month to month, the site is always yours, and there is no obligation to add anything else.</p>
 
-    <div class="tiers">
-      <div class="tier" data-reveal>
-        <h3>Website</h3>
-        <p class="who">A real presence, done right.</p>
-        <div class="price"><span class="amt">$700</span> <span class="per">setup</span><span class="setup">+ $50 / month</span></div>
-        <ul>
-          <li>Custom, mobile-first site</li>
-          <li>Services, process, and FAQ</li>
-          <li>Quote and photo-to-quote form</li>
-          <li>We keep listings and photos updated</li>
-        </ul>
-        <a class="btn btn--ghost" href="#next">Confirmed choice</a>
+    <div class="callout" data-reveal>
+      <span class="badge" style="position:static;display:inline-block;margin-bottom:.7rem">Selected for you</span>
+      <h3>Your website</h3>
+      <div class="priceband">
+        <span class="big">$700</span><small>one-time setup</small>
+        <span class="mo">+ $50</span><small>per month, effective on payment</small>
       </div>
-      <div class="tier feat" data-reveal>
-        <span class="badge">We recommend this</span>
-        <h3>Website + Optimization</h3>
-        <p class="who">Get found on Google and in AI answers.</p>
-        <div class="price"><span class="amt">$1,200</span> <span class="per">setup</span><span class="setup">+ $125 / month</span></div>
-        <ul>
-          <li class="plus">Everything in Website</li>
-          <li>SEO, GEO and AEO optimization</li>
-          <li>Built to show up in AI assistants</li>
-          <li>Reviews and trust signals working</li>
-        </ul>
-        <a class="btn btn--gold" href="#next">Best value</a>
+      <div class="plan">
+        <div class="col">
+          <h4>What the $700 builds</h4>
+          <ul>
+            <li>A custom, mobile-first site in your navy and gold, designed for phones first</li>
+            <li>The fuel-economy tune-up as your lead offer, front and center</li>
+            <li>Seatbelt and airbag repair featured as your standout edge</li>
+            <li>Every service laid out honestly: collision and body, restoration and resale, transport, tires, diagnostics</li>
+            <li>Your cars for sale, an About section, a plain-answer FAQ, and your real reviews</li>
+            <li>A quote form wired to one inbox, so every lead reaches you</li>
+            <li>Built to be found: clean structure, fast load, the Google basics baked in</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>What the $50 a month covers</h4>
+          <ul>
+            <li>Hosting kept live, secure, and fast, so the site is always up</li>
+            <li>Your listings and photos kept current, as often as you send them over</li>
+            <li>Small edits and content changes handled for you, you never touch the site</li>
+            <li>The quote form and inbox maintained, so no lead is lost</li>
+            <li>Ongoing support whenever you want a change</li>
+          </ul>
+        </div>
       </div>
-      <div class="tier" data-reveal>
-        <h3>Website + CRM</h3>
-        <p class="who">We run the growth for you.</p>
-        <div class="price"><span class="amt">$2,500</span> <span class="per">setup</span><span class="setup">+ $400 / month</span></div>
-        <ul>
-          <li class="plus">Everything in Optimization</li>
-          <li>CRM with automatic follow-up</li>
-          <li>Missed-call text-back</li>
-          <li>Reviews engine, run for you</li>
-        </ul>
-        <a class="btn btn--ghost" href="#next">Go all in</a>
-      </div>
+      <a class="btn btn--gold" href="#confirm" style="margin-top:.3rem">This is my plan</a>
     </div>
-    <div class="note" data-reveal><b>Where we landed:</b> you confirmed the <b>Website</b> at $700 + $50/mo, and asked to see the rest in writing. When you are ready to grow, <b>Website + Optimization</b> is the sweet spot.</div>
 
-    <!-- TOOLKIT -->
-    <h3 class="subh" data-reveal>The growth services</h3>
+    <!-- ADD-ONS -->
+    <h3 class="subh" data-reveal>Optional add-ons</h3>
+    <p class="addon-lead" data-reveal>None of this is required, and nothing here changes the $700 website. These are the pieces we can add as you grow. Pick any of them whenever you are ready, and we invoice you only for what you choose, when you choose it.</p>
 
     <article class="svc" data-reveal>
-      <div class="svc-top"><h4>Customer CRM &amp; follow-up</h4><span class="svc-price">Custom<small> quote</small></span></div>
-      <p>Every call, form, and photo-quote lands in one place, and follows up on its own so no lead slips.</p>
-      <div class="flow"><span>Capture</span><i>→</i><span>Auto follow-up</span><i>→</i><span>Pipeline</span><i>→</i><span>Review request</span></div>
-      <p class="forra"><b>For RA:</b> a busy afternoon never costs you a job you already earned.</p>
+      <div class="svc-top"><h4>Google search and AI visibility setup</h4><span class="svc-price">from $500<small> one-time</small></span></div>
+      <p>A one-time setup that gets RA Automotive found where people look now: Google search, and the AI assistants like ChatGPT and Perplexity that recommend local shops. We set up your Google Business listing, the key directories, and the behind-the-scenes structure so the search and AI engines can read and trust your site.</p>
+      <div class="flow"><span>Google search</span><i>→</i><span>Google Business profile</span><i>→</i><span>AI assistant visibility</span><i>→</i><span>Listings and structure</span></div>
+      <p class="forra"><b>For RA:</b> the plant-now, grow-over-time move. Search and AI engines take about three months to fully pick it up, so the sooner it is set, the sooner it works. Light monthly tuning is optional, from $30 a month.</p>
+    </article>
+
+    <article class="svc" data-reveal>
+      <div class="svc-top"><h4>Website plus CRM</h4><span class="svc-price">$2K to $3K<small> setup · then $400/mo</small></span></div>
+      <p>The website captures leads. The CRM works them for you. It hooks into your site so every call, form, and photo-quote lands in one place, then sends automatic texts and emails to anyone who reaches out, texts back any missed call on its own, and asks every finished customer for a review. It can tie into your Google Business page too. This is how you turn that dormant past-customer list into repeat work.</p>
+      <div class="flow"><span>Capture every lead</span><i>→</i><span>Auto text and email</span><i>→</i><span>Missed-call text-back</span><i>→</i><span>Reviews on autopilot</span></div>
+      <p class="forra"><b>For RA:</b> a busy afternoon never costs you a job you already earned. The setup is scoped to what you want, so it starts with a short planning call. It also runs best with a person on inbound, which we can staff for you affordably.</p>
+    </article>
+
+    <article class="svc" data-reveal>
+      <div class="svc-top"><h4>AI agents and chatbots</h4><span class="svc-price">Let's talk<small> ballpark</small></span></div>
+      <p>The official assistant you mentioned. A tireless front desk on your site and phone that answers instantly, day or night, books and qualifies the visitor, and hands you only what needs you. Priced to what you want it to do, so we scope it together, but plan on a setup in the low four figures plus a small monthly.</p>
+      <div class="flow"><span>Feed it your shop</span><i>→</i><span>Website chatbot</span><i>→</i><span>Voice AI for calls</span><i>→</i><span>Hands off real jobs</span></div>
+      <p class="forra"><b>For RA:</b> a 9pm visitor or a call you cannot grab is booked and warm by the time it reaches you.</p>
     </article>
 
     <article class="svc" data-reveal>
       <div class="svc-top"><h4>Offshore virtual assistants</h4><span class="svc-price">Custom<small> quote</small></span></div>
-      <p>Trained, low-cost staff who cover the phones, quoting, and follow-up so you stay in the bay.</p>
-      <div class="flow"><span>Pick the role</span><i>→</i><span>We match &amp; train</span><i>→</i><span>They work in your CRM</span><i>→</i><span>Scale as needed</span></div>
+      <p>Trained, low-cost staff who cover the phones, quoting, and follow-up so you stay in the bay. They work inside your CRM, so nothing slips while your hands are busy.</p>
+      <div class="flow"><span>Pick the role</span><i>→</i><span>We match and train</span><i>→</i><span>They work your CRM</span><i>→</i><span>Scale as needed</span></div>
       <p class="forra"><b>For RA:</b> stop losing the calls and quote requests that come in while you are under a car.</p>
     </article>
 
     <article class="svc" data-reveal>
-      <div class="svc-top"><h4>AI agents &amp; chatbots</h4><span class="svc-price">Custom<small> quote</small></span></div>
-      <p>A tireless front desk on your site and phone. Answers instantly day or night, and hands you only what needs you.</p>
-      <div class="flow"><span>Feed it your shop</span><i>→</i><span>Website chatbot</span><i>→</i><span>Voice AI for calls</span><i>→</i><span>Hands off real jobs</span></div>
-      <p class="forra"><b>For RA:</b> a 9pm visitor or a call you can't grab is booked and warm by the time it reaches you.</p>
-    </article>
-
-    <article class="svc" data-reveal>
-      <div class="svc-top"><h4>AI virtual walkthroughs · before &amp; after</h4><span class="svc-price">from $700<small> membership</small></span></div>
+      <div class="svc-top"><h4>AI virtual walkthroughs, before and after</h4><span class="svc-price">from $500<small> one-time</small></span></div>
       <p>Show the transformation. The car as it came in, damaged and dirty, then the same car restored and road-ready. Drag to see it.</p>
 
       <div class="ba" id="ba" aria-label="Before and after comparison, drag to reveal">
@@ -385,7 +423,7 @@
 
   <!-- REFERRALS -->
   <section id="referrals">
-    <p class="secnum" data-reveal>04 · Referrals</p>
+    <p class="secnum" data-reveal>05 · Referrals</p>
     <h2 class="sec-h" data-reveal>Let your network cover your bill</h2>
     <p class="sec-note" data-reveal>Every business you refer that becomes a paying client earns you a reward, your pick:</p>
     <div class="refs">
@@ -399,17 +437,19 @@
 
   <hr class="d" />
 
-  <!-- CLOSE -->
-  <section id="contact">
+  <!-- CONFIRM / CLOSE -->
+  <section id="confirm">
     <div class="close" data-reveal>
-      <h2>We want to be a partner you can rely on</h2>
-      <p>You mentioned a contact running a nonprofit for food drives with no website. We would be glad to help, and she is welcome at the Monday sessions at the business center, fully SBA-funded, no cost. Pass along our details whenever suits.</p>
-      <a class="btn btn--gold" href="#selling">Review what we sell</a>
-      <div class="sig"><b>Jay and Jordan Caro</b>Mpower Sourcing<span class="tag">Offshore Talent · AI Automation · Operational Leverage</span><a href="https://mpowersourcing.com">mpowersourcing.com</a></div>
+      <h2>Ready when you are</h2>
+      <p>This page is a review of everything we covered. Your <b>$700 website</b> is selected and ready. Confirm you are happy with the site, and we take it from there.</p>
+      <div class="flow" style="justify-content:center;margin:1.2rem 0"><span>You confirm</span><i>→</i><span>We invoice you</span><i>→</i><span>We apply your edits</span><i>→</i><span>Site goes live</span></div>
+      <a class="btn btn--gold" href="https://ra-automotive-company.vercel.app" target="_blank" rel="noopener">Open your site once more</a>
+      <div class="note" data-reveal style="text-align:left;margin-top:1.4rem"><b>How to confirm:</b> reply to this email with the go-ahead. Mpower Sourcing sends your invoice with a secure payment link, and once it is paid your site can go live as soon as the next day. Want any of the add-ons above? Add them anytime, just say the word and we invoice you then. Glad to help the nonprofit contact you mentioned too, no cost, whenever suits.</div>
+      <div class="sig"><b>Mpower Sourcing</b><span class="tag">Offshore Talent · AI Automation · Operational Leverage</span><a href="https://mpowersourcing.com">mpowersourcing.com</a></div>
     </div>
   </section>
 
-  <footer>Confidential · Prepared by Mpower Sourcing for RA Automotive · 20 July 2026 · <a href="https://mpowersourcing.com" style="color:var(--gold);text-decoration:none">mpowersourcing.com</a></footer>
+  <footer>Confidential · Prepared by Mpower Sourcing for RA Automotive Company · 21 July 2026 · <a href="https://mpowersourcing.com" style="color:var(--gold);text-decoration:none">mpowersourcing.com</a></footer>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
