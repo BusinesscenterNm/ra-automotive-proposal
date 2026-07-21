@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zico's Proposal · RA Automotive × Mpower Sourcing</title>
+<meta name="description" content="A website that matches RA Automotive's reputation, and the services that fill your open 30%. The key points, the services we sell, and what they cost." />
+<meta name="theme-color" content="#070B18" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Zico's Proposal · RA Automotive" />
+<meta property="og:description" content="From Mpower Sourcing. The website, the growth services we sell, and the pricing, on one page." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A1022'/%3E%3Cpath d='M8 23V9h5a4 4 0 0 1 0 8h-5m6 0l4 6' fill='none' stroke='%23F1C33F' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,900&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#070B18; --ink:#0A1022; --carbon:#111C38; --carbon-2:#16223f; --smoke:#18264C;
+    --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.16);
+    --fog:#EAEEF7; --steel:#98A3C2; --steel-2:#727ea0;
+    --navy:#23407D; --navy-2:#35589E;
+    --gold:#F1C33F; --gold-d:#C4941B; --gold-l:#F6D26B; --gold-soft:#FCE7A6;
+    --shadow:0 26px 60px -30px rgba(0,0,0,.82);
+    --glow:0 0 0 1px color-mix(in srgb,var(--gold) 26%,transparent), 0 22px 55px -26px color-mix(in srgb,var(--gold) 30%,transparent);
+    --maxw:980px;
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
+    --body:"Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100% }
+  body{
+    margin:0; color:var(--fog); font-family:var(--body); font-size:1.06rem; line-height:1.58;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    background:
+      radial-gradient(115% 70% at 12% 0%, color-mix(in srgb,var(--navy) 34%,transparent), transparent 52%),
+      radial-gradient(110% 75% at 92% 100%, color-mix(in srgb,var(--gold) 12%,transparent), transparent 55%),
+      var(--bg);
+    overflow-x:hidden;
+  }
+  a{ color:var(--gold-l); text-underline-offset:3px }
+  h1,h2,h3{ font-family:var(--display); font-weight:900; letter-spacing:-.01em; line-height:1.04; margin:0; text-wrap:balance }
+  h4{ font-family:var(--body); font-weight:700; margin:0 }
+  p{ max-width:64ch; text-wrap:pretty; margin:0 0 1rem }
+  ::selection{ background:color-mix(in srgb,var(--gold) 45%,transparent); color:#1a1305 }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 clamp(1.1rem,4vw,2.4rem) }
+
+  /* nav (solid, no backdrop-filter for smooth scroll) */
+  .nav{ position:sticky; top:0; z-index:40; background:color-mix(in srgb,var(--bg) 94%,#000); border-bottom:1px solid var(--line) }
+  .nav .in{ max-width:var(--maxw); margin:0 auto; display:flex; align-items:center; gap:1rem; padding:.6rem clamp(1.1rem,4vw,2.4rem) }
+  .brand{ display:flex; align-items:center; gap:.5rem; font-family:var(--display); font-weight:900; font-size:1rem; letter-spacing:-.01em }
+  .brand svg{ width:25px; height:25px; flex:none }
+  .brand .sub{ font-family:var(--body); font-weight:600; color:var(--steel) }
+  .navlinks{ display:flex; gap:.1rem; margin-left:auto; overflow-x:auto; scrollbar-width:none }
+  .navlinks::-webkit-scrollbar{ display:none }
+  .navlinks a{ white-space:nowrap; text-decoration:none; color:var(--steel); font-family:var(--body); font-weight:600; font-size:.82rem; padding:.4rem .62rem; border-radius:8px }
+  .navlinks a:hover,.navlinks a.on{ color:var(--fog); background:var(--carbon) }
+  @media (max-width:720px){ .navlinks{ display:none } }
+
+  .eyebrow{ font-family:var(--body); font-weight:700; font-size:.76rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin:0 0 1rem; display:flex; align-items:center; gap:.6rem }
+  .eyebrow::before{ content:""; width:26px; height:2px; background:var(--gold) }
+
+  /* hero */
+  .hero{ padding:clamp(2.8rem,8vw,5rem) 0 clamp(1.6rem,4vw,2.6rem) }
+  .h1{ font-size:clamp(2.6rem,8vw,5rem); letter-spacing:-.025em; margin:0 0 1rem }
+  .h1 em{ font-style:italic; color:var(--gold) }
+  .lede{ font-size:clamp(1.08rem,2.3vw,1.28rem); color:var(--steel); max-width:56ch }
+  .lede b{ color:var(--fog); font-weight:600 }
+  .cta{ display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1.6rem }
+  .btn{ display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; font-family:var(--body); font-weight:700; font-size:.94rem; padding:.82rem 1.4rem; border-radius:100px; min-height:46px; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease }
+  .btn--gold{ background:linear-gradient(180deg,var(--gold-l),var(--gold-d)); color:#1a1305; box-shadow:0 12px 26px -12px color-mix(in srgb,var(--gold) 60%,transparent) }
+  .btn--ghost{ border:1px solid var(--line-2); color:var(--fog) }
+  .btn:hover{ transform:translateY(-2px) }
+  .btn--gold:hover{ box-shadow:0 18px 34px -12px color-mix(in srgb,var(--gold) 78%,transparent) }
+  .btn--ghost:hover{ border-color:var(--gold); background:color-mix(in srgb,var(--gold) 9%,transparent) }
+  .prepared{ margin-top:1.6rem; font-size:.9rem; color:var(--steel-2); display:flex; flex-wrap:wrap; gap:.3rem .9rem }
+  .prepared b{ color:var(--fog); font-weight:600 }
+  .stat-row{ display:flex; flex-wrap:wrap; gap:.7rem; margin-top:2rem }
+  .stat{ flex:1 1 140px; background:var(--carbon); border:1px solid var(--line); border-radius:14px; padding:.9rem 1.1rem; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease }
+  .stat:hover{ transform:translateY(-3px); border-color:color-mix(in srgb,var(--gold) 45%,var(--line)); box-shadow:0 16px 34px -22px rgba(0,0,0,.75) }
+  .stat b{ display:block; font-family:var(--display); font-weight:900; font-size:1.7rem; color:var(--gold); font-variant-numeric:tabular-nums }
+  .stat span{ color:var(--steel); font-size:.82rem }
+
+  section{ scroll-margin-top:72px; padding:clamp(2.2rem,6vw,3.4rem) 0 }
+  hr.d{ border:none; border-top:1px solid var(--line); margin:0 }
+  .secnum{ font-family:var(--body); font-weight:700; font-size:.74rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gold-d); margin:0 0 .5rem }
+  .sec-h{ font-size:clamp(1.7rem,4.6vw,2.5rem); margin:0 0 .7rem }
+  .sec-note{ color:var(--steel); max-width:60ch; margin:0 0 1.4rem }
+
+  /* snapshot bullets */
+  .facts{ list-style:none; margin:0; padding:0; display:grid; gap:.6rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)) }
+  .facts li{ display:flex; gap:.7rem; background:var(--carbon); border:1px solid var(--line); border-radius:12px; padding:.85rem 1rem; font-size:.95rem; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease }
+  .facts li:hover{ transform:translateY(-3px); border-color:color-mix(in srgb,var(--gold) 45%,var(--line)); box-shadow:0 16px 34px -22px rgba(0,0,0,.75) }
+  .facts li::before{ content:""; flex:none; width:8px; height:8px; margin-top:.5rem; border-radius:50%; background:var(--gold); transition:transform .25s ease, box-shadow .25s ease }
+  .facts li:hover::before{ transform:scale(1.35); box-shadow:0 0 0 4px color-mix(in srgb,var(--gold) 22%,transparent) }
+
+  .callout{ background:linear-gradient(160deg, color-mix(in srgb,var(--gold) 12%,var(--carbon)), var(--carbon)); border:1px solid var(--line-2); border-radius:18px; padding:clamp(1.3rem,3vw,1.9rem); box-shadow:var(--glow); transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease }
+  .callout:hover{ transform:translateY(-3px); border-color:color-mix(in srgb,var(--gold) 55%,var(--line-2)); box-shadow:0 26px 60px -30px color-mix(in srgb,var(--gold) 40%,#000) }
+  .callout .tag{ font-family:var(--body); font-weight:700; font-size:.74rem; letter-spacing:.13em; text-transform:uppercase; color:var(--gold); margin:0 0 .5rem }
+  .callout h3{ font-size:clamp(1.35rem,3.4vw,1.8rem); margin:0 0 .6rem }
+  .callout p{ margin:0; color:var(--fog); max-width:60ch }
+
+  /* pricing */
+  .tiers{ display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); align-items:stretch }
+  .tier{ display:flex; flex-direction:column; background:var(--carbon); border:1px solid var(--line); border-radius:18px; padding:1.4rem 1.35rem 1.5rem; position:relative; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease }
+  .tier:hover{ transform:translateY(-6px); border-color:color-mix(in srgb,var(--gold) 50%,var(--line)); box-shadow:0 26px 50px -28px rgba(0,0,0,.85) }
+  .tier.feat{ border-color:color-mix(in srgb,var(--gold) 55%,var(--line)); box-shadow:var(--glow) }
+  .tier .badge{ position:absolute; top:-.7rem; left:1.35rem; background:linear-gradient(180deg,var(--gold-l),var(--gold-d)); color:#1a1305; font-family:var(--body); font-weight:700; font-size:.63rem; letter-spacing:.06em; text-transform:uppercase; padding:.27rem .62rem; border-radius:100px }
+  .tier h3{ font-family:var(--display); font-weight:600; font-size:1.3rem; margin:.1rem 0 .1rem }
+  .tier .who{ color:var(--steel); font-size:.85rem; margin:0 0 .9rem }
+  .price{ line-height:1; margin:.1rem 0 }
+  .price .amt{ font-family:var(--display); font-weight:900; font-size:2rem; color:var(--fog); font-variant-numeric:tabular-nums }
+  .price .per{ font-size:.88rem; color:var(--steel) }
+  .price .setup{ display:block; font-size:.84rem; color:var(--steel-2); margin-top:.3rem }
+  .tier ul{ list-style:none; margin:1rem 0 1.2rem; padding:0; flex:1 }
+  .tier li{ position:relative; padding:.32rem 0 .32rem 1.5rem; font-size:.89rem; border-top:1px solid var(--line) }
+  .tier li:first-child{ border-top:none }
+  .tier li::before{ content:"✓"; position:absolute; left:0; color:var(--gold); font-weight:700 }
+  .tier li.plus::before{ content:"+"; color:var(--gold-l) }
+  .tier .btn{ width:100%; justify-content:center }
+
+  .note{ background:var(--ink); border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:12px; padding:.95rem 1.15rem; margin-top:1.3rem; font-size:.92rem; color:var(--steel) }
+  .note b{ color:var(--fog) }
+
+  /* services toolkit */
+  .subh{ font-family:var(--display); font-weight:600; font-size:1.4rem; margin:2.2rem 0 .3rem }
+  .svc{ background:var(--carbon); border:1px solid var(--line); border-radius:16px; padding:1.2rem 1.3rem; margin-top:.9rem; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease }
+  .svc:hover{ transform:translateY(-4px); border-color:color-mix(in srgb,var(--gold) 45%,var(--line)); box-shadow:0 22px 44px -26px rgba(0,0,0,.8) }
+  .svc:hover .svc-top h4{ color:var(--gold-l) }
+  .svc-top{ display:flex; flex-wrap:wrap; align-items:baseline; gap:.5rem 1rem; justify-content:space-between }
+  .svc-top h4{ font-family:var(--display); font-weight:600; font-size:1.18rem; color:var(--fog); transition:color .25s ease }
+  .svc-price{ font-family:var(--display); font-weight:900; color:var(--gold); font-variant-numeric:tabular-nums; white-space:nowrap }
+  .svc-price small{ font-family:var(--body); font-weight:500; color:var(--steel-2); font-size:.72rem }
+  .svc p{ margin:.5rem 0 .7rem; color:var(--steel); font-size:.94rem; max-width:62ch }
+  .flow{ display:flex; flex-wrap:wrap; gap:.4rem; align-items:center; margin-top:.2rem }
+  .flow span{ font-family:var(--body); font-weight:600; font-size:.76rem; color:var(--fog); background:var(--smoke); border:1px solid var(--line); border-radius:100px; padding:.28rem .7rem; transition:transform .2s ease, border-color .2s ease, color .2s ease, background .2s ease }
+  .flow span:hover{ transform:translateY(-2px); border-color:var(--gold); color:var(--gold-l); background:color-mix(in srgb,var(--gold) 10%,var(--smoke)) }
+  .flow i{ color:var(--gold); font-style:normal; font-weight:700 }
+  .forra{ margin:.9rem 0 0; font-size:.9rem; color:var(--fog) }
+  .forra b{ color:var(--gold-l); font-weight:600 }
+
+  /* before/after slider */
+  .ba{ position:relative; margin-top:1.1rem; border-radius:14px; overflow:hidden; border:1px solid var(--line-2); aspect-ratio:16/9; user-select:none; touch-action:pan-y; box-shadow:var(--shadow) }
+  .ba__img{ position:absolute; inset:0; display:grid; place-items:center }
+  .ba__after{ background:radial-gradient(120% 120% at 30% 15%, #24304f, #0a1022) }
+  .ba__before{ background:radial-gradient(120% 120% at 30% 15%, #2b2f36, #16181d); clip-path:inset(0 50% 0 0) }
+  .ba__scene{ width:78%; max-width:520px }
+  .ba__scene svg{ width:100%; height:auto; display:block }
+  .ba__tag{ position:absolute; bottom:12px; font-family:var(--body); font-weight:700; font-size:.68rem; letter-spacing:.05em; text-transform:uppercase; padding:.3rem .6rem; border-radius:8px }
+  .ba__tag--before{ left:12px; background:rgba(20,22,26,.72); color:#e6b4b4 }
+  .ba__tag--after{ right:12px; background:rgba(10,16,34,.72); color:var(--gold-l) }
+  .ba__range{ position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:ew-resize; z-index:3 }
+  .ba__line{ position:absolute; top:0; bottom:0; left:50%; width:2px; background:var(--gold); transform:translateX(-1px); z-index:2; pointer-events:none }
+  .ba__handle{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:42px; height:42px; border-radius:50%; background:var(--gold); color:#1a1305; display:grid; place-items:center; font-weight:800; z-index:2; pointer-events:none; box-shadow:0 8px 22px -8px rgba(0,0,0,.6) }
+  .ba-cap{ font-size:.85rem; color:var(--steel-2); margin:.7rem 0 0; text-align:center }
+
+  /* referrals */
+  .refs{ display:grid; gap:.8rem; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)) }
+  .ref{ background:var(--carbon); border:1px solid var(--line); border-radius:14px; padding:1.05rem 1.15rem; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease }
+  .ref:hover{ transform:translateY(-4px); border-color:color-mix(in srgb,var(--gold) 45%,var(--line)); box-shadow:0 20px 40px -24px rgba(0,0,0,.8) }
+  .ref h4{ font-family:var(--display); font-weight:600; font-size:1rem; color:var(--gold-l); margin:0 0 .3rem }
+  .ref p{ margin:0; color:var(--steel); font-size:.89rem }
+
+
+  .close{ background:linear-gradient(160deg, color-mix(in srgb,var(--gold) 12%,var(--carbon)), var(--carbon)); border:1px solid var(--line-2); border-radius:20px; padding:clamp(1.5rem,4vw,2.4rem); text-align:center; box-shadow:var(--glow) }
+  .close h2{ font-size:clamp(1.5rem,4vw,2.1rem); margin:0 0 .6rem }
+  .close p{ margin:0 auto 1rem; color:var(--steel); max-width:54ch }
+  .sig{ margin-top:1.2rem; font-size:.9rem; color:var(--steel-2) }
+  .sig b{ display:block; color:var(--fog); font-family:var(--display); font-weight:600; font-size:1.05rem }
+  footer{ text-align:center; padding:2.2rem 0 3rem; color:var(--steel-2); font-size:.8rem }
+
+  .r [data-reveal]{ opacity:0; transform:translateY(20px) }
+  @media (prefers-reduced-motion: reduce){ .r [data-reveal]{ opacity:1; transform:none } }
+  @media print{
+    @page{ margin:0 }
+    *{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important }
+    .nav{ display:none !important }
+    html,body{ background:var(--bg) !important; overflow:visible !important }
+    body{ padding:6mm 0 2mm }
+    /* content must never stay hidden in the PDF, regardless of JS/scroll state */
+    [data-reveal], .r [data-reveal]{ opacity:1 !important; transform:none !important }
+    .hero{ padding-top:1rem !important }
+    a{ text-decoration:none }
+    /* keep blocks whole across page breaks */
+    section, .callout, .tier, .svc, .ref, .facts li, .stat, .close, .ba, .note{ break-inside:avoid }
+    .sec-h, .subh, h1, h2, h3{ break-after:avoid }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="in">
+    <span class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0A1022"/><path d="M8 23V9h5a4 4 0 0 1 0 8h-5m6 0l4 6" fill="none" stroke="#F1C33F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Mpower <span class="sub">Sourcing</span>
+    </span>
+    <div class="navlinks">
+      <a href="#snapshot">Snapshot</a>
+      <a href="#offer">The offer</a>
+      <a href="#selling">What we sell</a>
+      <a href="#referrals">Referrals</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="eyebrow" data-reveal>Mpower Sourcing · Proposal for RA Automotive</p>
+    <h1 class="h1" data-reveal>Zico's<br>proposal.</h1>
+    <p class="lede" data-reveal>A website that matches your reputation, and the services that fill your open <b>30%</b>. Here are the key points, what we sell, and what it costs. No obligation to go past the website.</p>
+    <div class="cta" data-reveal>
+      <a class="btn btn--gold" href="#selling">See what we sell</a>
+      <a class="btn btn--ghost" href="#contact">Get in touch</a>
+    </div>
+    <div class="prepared" data-reveal>
+      <span>For <b>Zico, RA Automotive</b></span><span>From <b>Jay and Jordan Caro, Mpower Sourcing</b></span><span><b>20 July 2026</b></span>
+    </div>
+    <div class="stat-row">
+      <div class="stat" data-reveal><b data-count="15">15</b><span>vehicles you can hold</span></div>
+      <div class="stat" data-reveal><b data-count="70" data-suffix="%">70%</b><span>running today</span></div>
+      <div class="stat" data-reveal><b data-count="30" data-suffix="%">30%</b><span>open, ready to fill</span></div>
+    </div>
+  </header>
+
+  <hr class="d" />
+
+  <!-- SNAPSHOT -->
+  <section id="snapshot">
+    <p class="secnum" data-reveal>01 · Where you're at</p>
+    <h2 class="sec-h" data-reveal>The quick picture</h2>
+    <ul class="facts">
+      <li data-reveal>15-vehicle capacity, running near 70%. That open 30% is real work you can already handle.</li>
+      <li data-reveal>Almost all business is word of mouth. No email or text follow-up to past customers yet.</li>
+      <li data-reveal>Seatbelt and airbag repair is your edge, and it is already showing up in search.</li>
+      <li data-reveal>You want one simple service, under an hour, that fills bays fast without tying one up.</li>
+    </ul>
+  </section>
+
+  <hr class="d" />
+
+  <!-- OFFER -->
+  <section id="offer">
+    <p class="secnum" data-reveal>02 · The lead offer</p>
+    <h2 class="sec-h" data-reveal>Sell the result: better fuel economy</h2>
+    <div class="callout" data-reveal>
+      <p class="tag">Your own idea, the strongest one</p>
+      <h3>A fuel-economy tune-up your whole customer base can buy</h3>
+      <p>You already own the diagnostic equipment. Basic tuning, air intake, and error-code correction give a real jump in miles per gallon, and it pays for itself in a few fill-ups. Best part: it fits the Hondas, Civics, Corollas and Camrys that make up most of your customers, not one narrow car. Every car that comes in benefits, so it is easy to promote and fast to deliver. We then get you found for it on Google and inside AI answers.</p>
+    </div>
+  </section>
+
+  <hr class="d" />
+
+  <!-- WHAT WE SELL -->
+  <section id="selling">
+    <p class="secnum" data-reveal>03 · What we sell</p>
+    <h2 class="sec-h" data-reveal>The website, and the services behind it</h2>
+    <p class="sec-note" data-reveal>Start with the website. Add the growth services whenever you are ready, one at a time. Monthly covers upkeep, so you never touch the site yourself. Month to month, and the site is always yours.</p>
+
+    <div class="tiers">
+      <div class="tier" data-reveal>
+        <h3>Website</h3>
+        <p class="who">A real presence, done right.</p>
+        <div class="price"><span class="amt">$700</span> <span class="per">setup</span><span class="setup">+ $50 / month</span></div>
+        <ul>
+          <li>Custom, mobile-first site</li>
+          <li>Services, process, and FAQ</li>
+          <li>Quote and photo-to-quote form</li>
+          <li>We keep listings and photos updated</li>
+        </ul>
+        <a class="btn btn--ghost" href="#next">Confirmed choice</a>
+      </div>
+      <div class="tier feat" data-reveal>
+        <span class="badge">We recommend this</span>
+        <h3>Website + Optimization</h3>
+        <p class="who">Get found on Google and in AI answers.</p>
+        <div class="price"><span class="amt">$1,200</span> <span class="per">setup</span><span class="setup">+ $125 / month</span></div>
+        <ul>
+          <li class="plus">Everything in Website</li>
+          <li>SEO, GEO and AEO optimization</li>
+          <li>Built to show up in AI assistants</li>
+          <li>Reviews and trust signals working</li>
+        </ul>
+        <a class="btn btn--gold" href="#next">Best value</a>
+      </div>
+      <div class="tier" data-reveal>
+        <h3>Website + CRM</h3>
+        <p class="who">We run the growth for you.</p>
+        <div class="price"><span class="amt">$2,500</span> <span class="per">setup</span><span class="setup">+ $400 / month</span></div>
+        <ul>
+          <li class="plus">Everything in Optimization</li>
+          <li>CRM with automatic follow-up</li>
+          <li>Missed-call text-back</li>
+          <li>Reviews engine, run for you</li>
+        </ul>
+        <a class="btn btn--ghost" href="#next">Go all in</a>
+      </div>
+    </div>
+    <div class="note" data-reveal><b>Where we landed:</b> you confirmed the <b>Website</b> at $700 + $50/mo, and asked to see the rest in writing. When you are ready to grow, <b>Website + Optimization</b> is the sweet spot.</div>
+
+    <!-- TOOLKIT -->
+    <h3 class="subh" data-reveal>The growth services</h3>
+
+    <article class="svc" data-reveal>
+      <div class="svc-top"><h4>Customer CRM &amp; follow-up</h4><span class="svc-price">Custom<small> quote</small></span></div>
+      <p>Every call, form, and photo-quote lands in one place, and follows up on its own so no lead slips.</p>
+      <div class="flow"><span>Capture</span><i>→</i><span>Auto follow-up</span><i>→</i><span>Pipeline</span><i>→</i><span>Review request</span></div>
+      <p class="forra"><b>For RA:</b> a busy afternoon never costs you a job you already earned.</p>
+    </article>
+
+    <article class="svc" data-reveal>
+      <div class="svc-top"><h4>Offshore virtual assistants</h4><span class="svc-price">Custom<small> quote</small></span></div>
+      <p>Trained, low-cost staff who cover the phones, quoting, and follow-up so you stay in the bay.</p>
+      <div class="flow"><span>Pick the role</span><i>→</i><span>We match &amp; train</span><i>→</i><span>They work in your CRM</span><i>→</i><span>Scale as needed</span></div>
+      <p class="forra"><b>For RA:</b> stop losing the calls and quote requests that come in while you are under a car.</p>
+    </article>
+
+    <article class="svc" data-reveal>
+      <div class="svc-top"><h4>AI agents &amp; chatbots</h4><span class="svc-price">Custom<small> quote</small></span></div>
+      <p>A tireless front desk on your site and phone. Answers instantly day or night, and hands you only what needs you.</p>
+      <div class="flow"><span>Feed it your shop</span><i>→</i><span>Website chatbot</span><i>→</i><span>Voice AI for calls</span><i>→</i><span>Hands off real jobs</span></div>
+      <p class="forra"><b>For RA:</b> a 9pm visitor or a call you can't grab is booked and warm by the time it reaches you.</p>
+    </article>
+
+    <article class="svc" data-reveal>
+      <div class="svc-top"><h4>AI virtual walkthroughs · before &amp; after</h4><span class="svc-price">from $700<small> membership</small></span></div>
+      <p>Show the transformation. The car as it came in, damaged and dirty, then the same car restored and road-ready. Drag to see it.</p>
+
+      <div class="ba" id="ba" aria-label="Before and after comparison, drag to reveal">
+        <div class="ba__img ba__after">
+          <div class="ba__scene">
+            <svg viewBox="0 0 420 190" role="img" aria-label="Restored car, clean and glossy">
+              <defs><linearGradient id="ab" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D26B"/><stop offset="1" stop-color="#C4941B"/></linearGradient></defs>
+              <ellipse cx="210" cy="164" rx="150" ry="12" fill="#0a1022" opacity=".6"/>
+              <path d="M28,142 L64,142 C64,120 82,106 104,106 C126,106 144,120 144,142 L276,142 C276,120 294,106 316,106 C338,106 356,120 356,142 L396,142 C402,142 406,138 404,132 L390,96 C386,88 378,83 369,83 L252,74 C242,60 226,52 206,52 L150,54 C132,55 120,66 110,82 L46,94 C34,96 25,106 24,120 L23,132 C23,138 24,142 28,142 Z" fill="url(#ab)"/>
+              <path d="M156,80 L200,62 C214,60 230,64 240,74 L246,90 L150,88 C150,84 152,82 156,80 Z" fill="#0a1022" opacity=".55"/>
+              <path d="M40,110 L360,110" stroke="#fff8e6" stroke-width="2" opacity=".4"/>
+              <circle cx="104" cy="146" r="24" fill="#0a1022"/><circle cx="104" cy="146" r="11" fill="#F6D26B"/>
+              <circle cx="316" cy="146" r="24" fill="#0a1022"/><circle cx="316" cy="146" r="11" fill="#F6D26B"/>
+              <g fill="#fff"><circle cx="132" cy="72" r="2.2"/><circle cx="340" cy="100" r="1.8"/><path d="M300 66 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" opacity=".9"/></g>
+            </svg>
+          </div>
+          <span class="ba__tag ba__tag--after">After · restored</span>
+        </div>
+        <div class="ba__img ba__before" id="baBefore">
+          <div class="ba__scene">
+            <svg viewBox="0 0 420 190" role="img" aria-label="Damaged car, dented and dull">
+              <ellipse cx="210" cy="164" rx="150" ry="12" fill="#111" opacity=".6"/>
+              <path d="M28,142 L64,142 C64,120 82,106 104,106 C126,106 144,120 144,142 L276,142 C276,120 294,106 316,106 C338,106 356,120 356,142 L396,142 C402,142 406,138 404,132 L390,96 C386,88 378,83 369,83 L252,74 C242,60 226,52 206,52 L150,54 C132,55 120,66 110,82 L46,94 C34,96 25,106 24,120 L23,132 C23,138 24,142 28,142 Z" fill="#4b5058"/>
+              <path d="M156,80 L200,62 C214,60 230,64 240,74 L246,90 L150,88 C150,84 152,82 156,80 Z" fill="#23262b" opacity=".85"/>
+              <path d="M250,74 l30,9 -8,14 -26,-7 z" fill="#2c2f34"/>
+              <g stroke="#b23a3a" stroke-width="2.4" fill="none" stroke-linecap="round"><path d="M300,96 l14,10 M306,92 l10,18 M296,104 l20,6"/></g>
+              <g stroke="#1c1e22" stroke-width="1.6" fill="none"><path d="M120,110 l24,6 M140,120 l22,-4 M80,120 l18,4"/></g>
+              <circle cx="104" cy="146" r="24" fill="#111"/><circle cx="104" cy="146" r="11" fill="#333"/>
+              <circle cx="316" cy="146" r="24" fill="#111"/><circle cx="316" cy="146" r="11" fill="#333"/>
+              <g fill="#6b6f76" opacity=".7"><circle cx="180" cy="100" r="2"/><circle cx="240" cy="104" r="1.8"/></g>
+            </svg>
+          </div>
+          <span class="ba__tag ba__tag--before">Before · as it came in</span>
+        </div>
+        <div class="ba__line" id="baLine"></div>
+        <div class="ba__handle" id="baHandle" aria-hidden="true">‹›</div>
+        <input class="ba__range" id="baRange" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
+      </div>
+      <p class="ba-cap">Your real repair photos go here on the live version.</p>
+      <p class="forra"><b>For RA:</b> your work is the sales pitch. Nothing sells a body shop like a real before and after, and it doubles as marketing for the cars you restore and resell.</p>
+    </article>
+  </section>
+
+  <hr class="d" />
+
+  <!-- REFERRALS -->
+  <section id="referrals">
+    <p class="secnum" data-reveal>04 · Referrals</p>
+    <h2 class="sec-h" data-reveal>Let your network cover your bill</h2>
+    <p class="sec-note" data-reveal>Every business you refer that becomes a paying client earns you a reward, your pick:</p>
+    <div class="refs">
+      <div class="ref" data-reveal><h4>Money off your plan</h4><p>A credit toward your monthly that stacks the more you send.</p></div>
+      <div class="ref" data-reveal><h4>A free add-on</h4><p>Photography, a logo refresh, a walkthrough video, on us.</p></div>
+      <div class="ref" data-reveal><h4>A bump up a tier</h4><p>Move up a plan for a stretch without paying more.</p></div>
+      <div class="ref" data-reveal><h4>Your plan, covered</h4><p>Refer consistently and we handle the whole monthly.</p></div>
+    </div>
+    <p class="sec-note" data-reveal style="margin-top:1.2rem"><b style="color:var(--fog)">Who do you know, even one or two owners, who could use a site like this?</b></p>
+  </section>
+
+  <hr class="d" />
+
+  <!-- CLOSE -->
+  <section id="contact">
+    <div class="close" data-reveal>
+      <h2>We want to be a partner you can rely on</h2>
+      <p>You mentioned a contact running a nonprofit for food drives with no website. We would be glad to help, and she is welcome at the Monday sessions at the business center, fully SBA-funded, no cost. Pass along our details whenever suits.</p>
+      <a class="btn btn--gold" href="#selling">Review what we sell</a>
+      <div class="sig"><b>Jay and Jordan Caro</b>Mpower Sourcing</div>
+    </div>
+  </section>
+
+  <footer>Zico's Proposal · RA Automotive × Mpower Sourcing · 20 July 2026</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* before/after slider (no dependency) */
+  var range=document.getElementById('baRange'), before=document.getElementById('baBefore'),
+      line=document.getElementById('baLine'), handle=document.getElementById('baHandle');
+  function setBA(v){ before.style.clipPath='inset(0 '+(100-v)+'% 0 0)'; line.style.left=v+'%'; handle.style.left=v+'%'; }
+  if(range){ range.addEventListener('input', function(){ setBA(this.value); }); setBA(range.value); }
+
+  /* motion is progressive enhancement only. Native scroll stays untouched. */
+  if(reduce || typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined'){ return; }
+  gsap.registerPlugin(ScrollTrigger);
+  document.documentElement.classList.add('r');
+
+  var vh = window.innerHeight, eager = [];
+  gsap.utils.toArray('[data-reveal]').forEach(function(el){
+    if(el.getBoundingClientRect().top < vh * 0.92){
+      eager.push(el);
+      gsap.to(el, { opacity:1, y:0, duration:.6, ease:'power2.out' });
+    } else {
+      gsap.to(el, { opacity:1, y:0, duration:.55, ease:'power2.out',
+        scrollTrigger:{ trigger:el, start:'top 90%', once:true } });
+    }
+  });
+  var counters = [];
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var end=parseFloat(el.getAttribute('data-count')), suf=el.getAttribute('data-suffix')||'', o={v:0};
+    var finalText = Math.round(end)+suf;
+    counters.push({el:el, text:finalText});
+    function run(){ gsap.to(o,{ v:end, duration:1, ease:'power2.out',
+      onUpdate:function(){ el.textContent=Math.round(o.v)+suf; },
+      onComplete:function(){ el.textContent=finalText; } }); }
+    if(el.getBoundingClientRect().top < vh * 0.92){ run(); }
+    else { ScrollTrigger.create({ trigger:el, start:'top 92%', once:true, onEnter:run }); }
+  });
+  /* failsafe: if the frame loop never runs (e.g. loaded in a stalled/background tab),
+     never leave the above-the-fold content invisible or a counter frozen mid-count. */
+  setTimeout(function(){
+    eager.forEach(function(el){
+      if(parseFloat(getComputedStyle(el).opacity) < 0.99){ el.style.opacity='1'; el.style.transform='none'; }
+    });
+    counters.forEach(function(c){
+      if(c.el.getBoundingClientRect().top < vh * 0.92 && c.el.textContent !== c.text){ c.el.textContent = c.text; }
+    });
+  }, 2000);
+  var links=document.querySelectorAll('.navlinks a');
+  links.forEach(function(a){ var s=document.querySelector(a.getAttribute('href')); if(!s) return;
+    ScrollTrigger.create({ trigger:s, start:'top 45%', end:'bottom 45%',
+      onToggle:function(self){ if(self.isActive){ links.forEach(function(l){ l.classList.remove('on'); }); a.classList.add('on'); } } });
+  });
+})();
+</script>
+</body>
+</html>
