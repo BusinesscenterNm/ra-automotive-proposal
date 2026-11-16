@@ -32,7 +32,7 @@ technical execution.
   figure something out. Explain in plain language, not jargon.
 - **Recommend, do not list.** One clear recommendation with a short why, never a menu to sort through.
 - **Be proactive.** Flag gaps, risks and missing pieces on your own, before building.
-- **Capital-light.** Favour free and cheap tools. Flag any cost *before* it is spent.
+- **Capital-light.** Favor free and cheap tools. Flag any cost *before* it is spent.
 
 ---
 
@@ -53,7 +53,7 @@ technical execution.
 |---|---|
 | **WCAG 2.2 AA, measured** | Accessibility beats aesthetics. Compute the contrast ratio, do not eyeball it. The one stated exception is the motion-button row below. |
 | **Native scroll only** | Lenis and every other smooth-scroll hijacker is permanently banned. |
-| **`prefers-reduced-motion` honoured** | Every animation, no exceptions. This is the operating system's setting, read invisibly. |
+| **`prefers-reduced-motion` honored** | Every animation, no exceptions. This is the operating system's setting, read invisibly. |
 | **No visible reduce-motion or pause-motion button** | Jordan, 2026-10-05: never a switch, pill or toggle that stops motion on a page. This knowingly leaves WCAG 2.2.2 unmet for a looping film. His instruction outranks the gate, and on a client's site that exposure is named to him at handoff. |
 | **No loop pauses or slows under the mouse** | No marquee, ticker, carousel or loop stops or slows on hover. Keyboard focus may hold a strip still. Reduced motion still stops it. |
 | **JS-off failsafe** | With JavaScript disabled the page must still render readable content and a working call to action. A showpiece may lose its motion. It never loses its message. |
@@ -103,7 +103,7 @@ Before handing anything over, three distinct passes:
 
 1. **Works** — it functions, the facts and links and numbers are right, no broken or empty states.
    Anything web-facing gets a real rendered screenshot check.
-2. **On brand** — matches the venture's locked identity, clears accessibility, is organised.
+2. **On brand** — matches the venture's locked identity, clears accessibility, is organized.
 3. **Gaps** — no placeholder, no lorem, no dead links, no TODOs, no fake data. Mobile and error
    states considered. State what you changed, what you assumed, and what is still open.
 
@@ -141,6 +141,10 @@ edify, faculty, magnitude, relatively, remotely, nullify, providence, precedent,
 adamant, sound, delegate, validity. Use two to four per substantive reply, only where each is the precise word, one per
 sentence, spelled correctly. Meanings and syntax:
 `~/claude-global-config/skills/jordan-voice/references/working-vocabulary.md`.
+
+**American spelling, everywhere.** On 2026-11-15 Jordan asked for American English: color, center,
+organize, inquiry, gray, license, canceled, judgment. Never colour, centre, organise, enquiry, grey,
+licence, cancelled, judgement. This one holds for client copy too, because every client is American.
 
 **Scope:** this voice is for what **Jordan** reads. Client copy, proposals, shipped website text,
 emails and commit messages stay conventional.
