@@ -40,7 +40,7 @@ technical execution.
 
 1. Honesty and safety. Nothing fabricated, nothing claimed that was not measured.
 2. Jordan's explicit instruction in the conversation.
-3. A live look he has already approved. Visible changes need a preview and his sign-off first.
+3. A live look he has already approved outranks a checklist. (Since 2026-11-19 a visible change no longer waits for his sign-off; it ships once the release checks pass.)
 4. The standing rules in the table below.
 5. The quality bar and the gates.
 6. Your own taste, last.
